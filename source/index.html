@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online calculator</title>
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
+    <script>
+      // Picture element HTML5 shiv
+      document.createElement("picture");
+    </script>
+    <script src="js/picturefill.js" async=""></script>
+  </head>
+  <body>
+    <div class="sprite" style="display:none">
+      <include src="build/img/sprite.svg"></include>
+    </div>
+    <header class="header">
+      <p class="visually-hidden">X10 | МАРКЕТИНГОВОЕ АГЕНТСТВО. Тестовое задание</p>
+    </header>
+      <main class="main">
+        <div class="container">
+          <h1 class="main__heading visually-hidden">Онлайн калькулятор для расчета займов</h1>
+          <ul class="main__list">
+            <li class="main__item">
+              <section class="loan-data">
+                <h2 class="section-heading section-heading--loandata">1. Данные о займе</h2>
+                <div class="loan-data__container">
+                  <div class="loan-data__wrapper loan-data__wrapper--column">
+                    <div class="loan-data__wrapper">
+                      <p class="loan-data__text">Сумма кредита:</p> <span class="loan-data__text loan-data__text--result loan-data__text--underline">150 000 &#8381;</span>
+                    </div>
+                    <div class="loan-data__picker">
+                      <div class="loan-data__limiter loan-data__limiter--left"></div>
+                      <div class="loan-data__limiter loan-data__limiter--right"></div>
+                      <div class="loan-data__bar"></div>
+                      <div class="loan-data__toggle loan-data__toggle--sum"></div>
+                      <div class="loan-data__limits">
+                        <span class="loan-data__text loan-data__text--sub">0 &#8381;</span>
+                        <span class="loan-data__text loan-data__text--sub">4 300 000 &#8381;</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="loan-data__wrapper loan-data__wrapper--column">
+                    <div class="loan-data__wrapper">
+                      <p class="loan-data__text">Срок кредита:</p>
+                      <div class="loan-data__result">
+                        <span class="loan-data__text loan-data__text--result">8</span>
+                        <span class="loan-data__text loan-data__text--unit">месяцев</span>
+                      </div>
+                    </div>
+                    <div class="loan-data__picker">
+                      <div class="loan-data__bar"></div>
+                      <div class="loan-data__limiter loan-data__limiter--left loan-data__limiter--full"></div>
+                      <div class="loan-data__limiter loan-data__limiter--right loan-data__limiter--full"></div>
+                      <div class="loan-data__toggle loan-data__toggle--term"></div>
+                      <div class="loan-data__limits">
+                        <span class="loan-data__text loan-data__text--sub">0 месяцев</span>
+                        <span class="loan-data__text loan-data__text--sub">12 месяцев</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="loan-data__wrapper loan-data__wrapper--column">
+                    <div class="loan-data__wrapper">
+                      <p class="loan-data__text">Отсрочка выплат:</p>
+                      <div class="loan-data__result">
+                        <span class="loan-data__text loan-data__text--result">2</span>
+                        <span class="loan-data__text loan-data__text--unit">месяца</span>
+                      </div>
+                    </div>
+                    <div class="loan-data__picker">
+                      <div class="loan-data__bar"></div>
+                      <div class="loan-data__limiter loan-data__limiter--left loan-data__limiter--full"></div>
+                      <div class="loan-data__limiter loan-data__limiter--right loan-data__limiter--full"></div>
+                      <div class="loan-data__toggle loan-data__toggle--delay"></div>
+                      <div class="loan-data__limits">
+                        <span class="loan-data__text loan-data__text--sub">0 месяцев</span>
+                        <span class="loan-data__text loan-data__text--sub">12 месяцев</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="loan-data__wrapper loan-data__wrapper--button">
+                    <button type="button" name="button" class="button">Расчитать</button>
+                  </div>
+                </div>
+              </section>
+            </li>
+            <li class="main__item">
+              <section class="loan-type">
+                <div class="loan-type__wrapper">
+                  <h2 class="section-heading section-heading--loantype">2. Виды займов</h2>
+                  <p class="loan-type__text loan-type__text--sub">Выберите <span class="loan-type__text loan-type__text--red">один</span> из вариантов </p>
+                </div>
+                <ul class="loan-type__list">
+                  <li class="loan-type__item loan-type__item--open">
+                    <div class="loan-type__head loan-type__head--on">
+                      <h3 class="loan-type__name loan-type__name--on">Микрозаём «Рост» под залог</h3>
+                      <div class="loan-type__toggle loan-type__toggle--on"></div>
+                    </div>
+                    <div class="loan-type__card">
+                      <div class="loan-type__wrapper loan-type__wrapper--column">
+                        <p class="loan-type__text loan-type__text--gray">Заявитель:</p>
+                        <p class="loan-type__text loan-type__text--incard">Заявители, соответствующие требованиям пунктов 3.1., 3.4. раздела 3 <a href="#" class="loan-type__link">Правил предоставления микрозаймов</a>.</p>
+                      </div>
+                      <div class="loan-type__wrapper loan-type__wrapper--column">
+                        <p class="loan-type__text loan-type__text--gray">Срок деятельности:</p>
+                        <p class="loan-type__text loan-type__text--incard">От 0 месяцев (на цель: Резвитие бизнеса);</p>
+                        <p class="loan-type__text loan-type__text--incard">От 6 месяцев (на иные цели).</p>
+                      </div>
+                      <div class="loan-type__wrapper loan-type__wrapper--column">
+                        <p class="loan-type__text loan-type__text--gray">Процентная ставка (в % годовыx):</p>
+                        <p class="loan-type__text loan-type__text--incard">Полуторакратная ключевая ставка, установленная Банком России</p>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="loan-type__item">
+                    <div class="loan-type__head">
+                      <h3 class="loan-type__name">Поддержа 2020</h3>
+                      <div class="loan-type__toggle"></div>
+                    </div>
+                  </li>
+                  <li class="loan-type__item">
+                    <div class="loan-type__head">
+                      <h3 class="loan-type__name">Микрозаём «Рост беззалоговый»</h3>
+                      <div class="loan-type__toggle"></div>
+                    </div>
+                  </li>
+                  <li class="loan-type__item">
+                    <div class="loan-type__head">
+                      <h3 class="loan-type__name">Микрозаём «Приоритетный беззалоговый»</h3>
+                      <div class="loan-type__toggle"></div>
+                    </div>
+                  </li>
+                  <li class="loan-type__item">
+                    <div class="loan-type__head">
+                      <h3 class="loan-type__name loan-type__name--off">Микрозаем Беззалоговый</h3>
+                      <div class="loan-type__toggle"></div>
+                    </div>
+                  </li>
+                  <li class="loan-type__item">
+                    <div class="loan-type__head">
+                      <h3 class="loan-type__name">Микрозаём «Купеческий» под залог</h3>
+                      <div class="loan-type__toggle"></div>
+                    </div>
+                  </li>
+                  <li class="loan-type__item">
+                    <div class="loan-type__head">
+                      <h3 class="loan-type__name">Поддержка 2020 беззалоговый</h3>
+                      <div class="loan-type__toggle"></div>
+                    </div>
+                  </li>
+                </ul>
+              </section>
+            </li>
+            <li class="main__item">
+              <section class="loan-estimation">
+                <h2 class="section-heading">3. Расчет платежей по микрозайму</h2>
+                <div class="loan-estimation__container">
+                  <div class="loan-estimation__card">
+                    <div class="loan-estimation__wrapper loan-estimation__wrapper--results">
+                      <div class="loan-estimation__wrapper loan-estimation__wrapper--result">
+                        <p class="loan-estimation__result loan-estimation__result--name">Сумма кредита:</p>
+                        <span class="loan-estimation__result loan-estimation__result--value">150 000 &#8381;</span>
+                      </div>
+                      <div class="loan-estimation__wrapper loan-estimation__wrapper--result">
+                        <p class="loan-estimation__result loan-estimation__result--name">Процентная ставка:</p>
+                        <span class="loan-estimation__result loan-estimation__result--value">18,5 %</span>
+                      </div>
+                      <div class="loan-estimation__wrapper loan-estimation__wrapper--result">
+                        <p class="loan-estimation__result loan-estimation__result--name">Переплата за кредит:</p>
+                        <span class="loan-estimation__result loan-estimation__result--value">10 592 &#8381;</span>
+                      </div>
+                      <div class="loan-estimation__wrapper loan-estimation__wrapper--result">
+                        <p class="loan-estimation__result loan-estimation__result--name">Итоговая сумма:</p>
+                        <span class="loan-estimation__result loan-estimation__result--value">150 591,94 &#8381;</span>
+                      </div>
+                    </div>
+                    <div class="loan-estimation__wrapper loan-estimation__wrapper--payment">
+                      <div class="loan-estimation__wrapper loan-estimation__wrapper--payment loan-estimation__wrapper--paymentrezalt">
+                        <p class="loan-estimation__result loan-estimation__result--name loan-estimation__result--monthly">Ежемесячный платёж:</p>
+                        <span class="loan-estimation__result loan-estimation__result--value loan-estimation__result--green">20 073,99 &#8381;</span>
+                      </div>
+                      <div class="loan-estimation__paymentgraph">
+                        <a class="loan-estimation__link" href="#">График платежей</a>
+                        <a class="button button--download">
+                          <svg class="button__icon button__icon--phone" width="20" height="20"><use xlink:href="#phone"></use></svg>
+                          <span class="visually-hidden">Скачать</span>
+                        </a>
+                        <a class="button button--print">
+                          <svg class="button__icon button__icon--print" width="20" height="20"><use xlink:href="#print"></use></svg>
+                          <span class="visually-hidden">Распечать</span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+            </li>
+            <li class="main__item">
+              <section class="consultation">
+                <h2 class="section-heading">4. Консультация по займу</h2>
+                <form class="consultation" action="https://echo.htmlacademy.ru" method="get">
+                  <div class="consultation__wraper">
+                    <div class="consultation__wraper consultation__wraper--name">
+                        <label class="consultation__label" for="name">Ваше имя</label>
+                        <input class="consultation__input" type="text" name="name" id="name" placeholder="Дориан Шмидт" required="">
+                      </div>
+                    <div class="consultation__wraper consultation__wraper--phone">
+                        <label class="consultation__label consultation__label--tel" for="tel">Ваш телефон</label>
+                        <input class="consultation__input consultation__input--tel" id="tel" type="tel" name="tel" placeholder="+7 (919) 555-55-55" required="">
+                      </div>
+                    <div class="consultation__wraper consultation__wraper--email">
+                        <label class="consultation__label consultation__label--email" for="email">Электронная почта</label>
+                        <input class="consultation__input consultation__input--email" id="email" type="email" name="email" placeholder="dorian_schmidt@mail.com" required="">
+                      </div>
+                  </div>
+                  <div class="consultation__wraper consultation__wraper--submit">
+                    <button class="button button--consultation" type="submit">Получить консультацию</button>
+                  </div>
+                </form>
+              </section>
+            </li>
+          </ul>
+        </div>
+      </main>
+    <footer class="footer">
+      <p class="visually-hidden">2020 winterinside</p>
+    </footer>
+    <script src="js/script.js"></script>
+  </body>
+</html>

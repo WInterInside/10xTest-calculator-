@@ -1,0 +1,15 @@
+.section-heading {
+  margin-top: 0;
+  font-weight: 500;
+
+  @include text (#333333, 30px, 30px);
+
+  &--loandata {
+    padding-top: 80px;
+    margin-bottom: 32px;
+  }
+
+  &--loantype {
+    margin-right: 20px;
+  }
+}

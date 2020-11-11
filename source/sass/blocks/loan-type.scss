@@ -1,0 +1,149 @@
+.loan-type__wrapper {
+  display: flex;
+  align-items: baseline;
+
+  &--column {
+    flex-direction: column;
+    margin-bottom: 17px;
+  }
+
+  &--column:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.loan-type__card {
+  display: flex;
+  flex-direction: column;
+}
+
+.loan-type__text {
+  @include text (#545454, 16px, 16px);
+
+  font-weight: 600;
+  margin: 0;
+  padding-top: 2px;
+
+  &--sub {
+    font-weight: 600;
+    padding-top: 30px;
+    text-transform: uppercase;
+
+    @include text (#a6a6a6, 12px, 12px);
+  }
+
+  &--red {
+    @include text ($red, 12px, 12px);
+    font-weight: 700px;
+  }
+
+  &--gray {
+    @include text (#a6a6a6, 10px, 10px);
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  }
+
+  &--incard {
+    @include text (#545454, 13px, 10px);
+  }
+}
+
+.loan-type__list {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 330px;
+  margin-bottom: 50px;
+}
+
+.loan-type__item {
+  width: 496px;
+  min-height: 50px;
+  padding: 17px;
+
+  background-color: #f8f8f8;
+  border: 1px solid #cfcfcf;
+  border-radius: 10px;
+
+  &--open {
+    min-height: 270px;
+    background-color: #ffffff;
+  }
+}
+
+.loan-type__item:last-child {
+  margin-bottom: 0;
+}
+
+.loan-type__head {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  padding-left: 28px;
+
+  &::before {
+    @include pseudo;
+    top: 3px;
+    left: 0;
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    background-color: #cfcfcf;
+  }
+
+  &--on {
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #cfcfcf;
+
+    &::before {
+      border: 3px solid $red;
+      background-color: #ffffff;
+    }
+  }
+}
+
+.loan-type__name {
+  display: inline-block;
+
+  @include text (#545454, 16px, 23px);
+
+  position: relative;
+  margin: 0;
+  border-bottom: 1px dashed #cfcfcf;
+
+  &--on {
+    border-bottom: none;
+    color: $red;
+  }
+}
+
+.loan-type__toggle {
+  width: 11px;
+  height: 10px;
+  margin-right: 5px;
+  margin-top: 2px;
+  border-left: 3px solid #cfcfcf;
+  border-bottom: 3px solid #cfcfcf;
+  transform: rotate(-45deg);
+  cursor: pointer;
+
+  &--on {
+    position: relative;
+    height: 12px;
+    width: 3px;
+    background-color: $red;
+    border: none;
+
+    &::before {
+      @include pseudo;
+      top: 0;
+      left: 0;
+      height: 12px;
+      width: 3px;
+      background-color: $red;
+      transform: rotate(90deg);
+    }
+  }
+}

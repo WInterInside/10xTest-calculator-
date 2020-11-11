@@ -1,0 +1,62 @@
+:focus::-webkit-input-placeholder {
+  color: $red;
+}
+
+:focus::-moz-placeholder {
+  color: $red;
+}
+
+:focus:-moz-placeholder {
+  color: $red;
+}
+
+:focus:-ms-input-placeholder {
+  color: $red;
+}
+
+.consultation__wraper {
+  display: flex;
+
+  &--name,
+  &--phone,
+  &--email {
+    flex-direction: column;
+    margin-right: 10px;
+    margin-bottom: 20px;
+  }
+
+  &--name {
+    width: 392px;
+  }
+
+  &--phone {
+    width: 220px;
+  }
+
+  &--email {
+    width: 370px;
+    margin-right: 0;
+  }
+}
+
+.consultation__label {
+  @include text (#a6a6a6, 10px, 10px);
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-bottom: 6px;
+  margin-left: 20px;
+}
+
+.consultation__input {
+  height: 52px;
+  border-radius: 5px;
+  border: 1px solid #cfcfcf;
+  padding-left: 20px;
+  background-color: #fafafa;
+
+  &:focus {
+    outline-color: $red;
+    color: $red;
+    background-color: #ffffff;
+  }
+}
